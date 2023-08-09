@@ -13,41 +13,53 @@
             <h1>Employee T-Shirt Registration</h1>
             <form action="">
                 <div>
-                    <label for="name">First Name</label>
-                    <input type="text" name="firstName" id="firstName">
-                    <label for="name">Last Name</label>
-                    <input type="text" name="lastName" id="lasttName">
+                    <label for="firstName">First Name</label>
+                    <input required type="text" name="firstName" id="firstName" placeholder="First Name">
+                    <label for="lastName">Last Name</label>
+                    <input required type="text" name="lastName" id="lastName" placeholder="Last Name">
                 </div>
                 <div>
                     <h2>Select A Shirt Size</h2>
-
-                    <p> <label for="xs">XS</label>
-                        <input type="radio" name="tshirt" id="xs" value="xs">
+                    <p>
+                        <input type="radio" name="tshirt" id="xs" value="xs" checked="checked">
+                        <label for="xs">XS</label>
                     </p>
-                    <p> <label for="s">S</label>
+                    <p>
                         <input type="radio" name="tshirt" id="s" value="s">
+                        <label for="s">S</label>
                     </p>
-                    <p> <label for="m">M</label>
+                    <p>
                         <input type="radio" name="tshirt" id="m" value="m">
+                        <label for="m">M</label>
                     </p>
                     <p>
-                        <label for="l">L</label>
                         <input type="radio" name="tshirt" id="l" value="l">
+                        <label for="l">L</label>
                     </p>
                     <p>
-                        <label for="xl">Xl</label>
                         <input type="radio" name="tshirt" id="xl" value="xl">
+                        <label for="xl">Xl</label>
                     </p>
                 </div>
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email">
-                <label for="password">Password:</label>
-                <input type="password" name="password" id="password">
+                <div>
+                    <label for="email">Email:</label>
+                    <input required type="email" name="email" id="email" placeholder="CompanyEmail@Outlook.com">
+                    <label for="password">Password:</label>
+                    <input required type="password" name="password" id="password">
+                </div>
+                <div>
+                    <label for="color">Select Color</label>
+                    <select name="color" id="color">
+                        <option value="blue">Navy Blue</option>
+                        <option value="lGray">Light Gray</option>
+                        <option value="dGray">Dark Gray</option>
+                        <option value="black">Black</option>
+                    </select>
+                </div>
                 <p><button>Register</button></p>
             </form>
         </section>
     </main>
-
 </body>
 
 </html>
